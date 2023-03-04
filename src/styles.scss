@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
 
 .display-flex {
@@ -42,4 +42,28 @@ body {
 
 .cursor {
     cursor: pointer;
+}
+
+/* Button 1*/
+
+.primary-button {
+    margin-top: 10px;
+    border: 2px solid #5988ff;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: #5988ff;
+    padding: 15px 30px;
+    min-width: 200px;
+    min-height: 60px;
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
+        transform: scale(1.10);
+    }
 }

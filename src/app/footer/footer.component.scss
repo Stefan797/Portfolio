@@ -1,21 +1,4 @@
-@mixin slide-icons-animation-footer {
-    animation-name: slideup;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-  
-    @keyframes slideup {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-}
+@import 'src/assets/scss/mixins';
 
 .sixth-section {
     width: 100%;
@@ -26,7 +9,6 @@
         margin-left: 6.94%;
         height: 15vh;
         width: 200px;
-        // background-color: rgba(0,0,0, 0.4);
         img {
             width: 80px;
             height: 80px;
@@ -35,7 +17,6 @@
     .sixth-section-name {
         height: 15vh;
         width: 300px;
-        // background-color: rgba(0, 0, 0, 0.4);
         p {
             font-family: 'Montserrat';
             font-style: normal;

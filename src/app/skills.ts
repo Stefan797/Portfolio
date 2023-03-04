@@ -22,5 +22,9 @@ export const allSkills = [
     {
         name: 'CSS',
         img: 'Css.png',
+    },
+    {
+        name: 'Python',
+        img: 'python.png',
     }
 ];

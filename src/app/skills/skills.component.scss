@@ -1,21 +1,4 @@
-@mixin jump-animation {
-    animation-name: jump;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-
-    @keyframes jump {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-}
+@import 'src/assets/scss/mixins';
 
 .third-section {
     min-height: 65vh;
@@ -43,14 +26,10 @@
                 height: 75px;
                 margin-left: 72px;
                 margin-right: 72px;
-                object-fit: cover;
             }
             p {
                 width: 85px;
                 height: 19px;
-                font-family: "Montserrat";
-                font-style: normal;
-                font-weight: 400;
                 font-size: 16px;
                 line-height: 120%;
                 color: #ffffff;
