@@ -1,0 +1,20 @@
+header {
+    .menu-nav-bar {
+        .menu-link-container {
+            width: 200px;
+            a {
+                color: #5988ff;
+                text-decoration: none;
+                margin-left: 57px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                &:hover {
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

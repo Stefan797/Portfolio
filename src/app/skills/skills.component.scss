@@ -1,0 +1,74 @@
+@mixin jump-animation {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+.third-section {
+    min-height: 65vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(128.94deg, #5988ff -33.96%, #5988ff 36.71%, #0043f0 112.25%);
+    h2 {
+        font-family: "Baloo 2";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+    .third-section-pictures {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .third-section-pictures-box {
+            text-align: center;
+            img {
+                width: 70px;
+                height: 75px;
+                margin-left: 72px;
+                margin-right: 72px;
+                object-fit: cover;
+            }
+            p {
+                width: 85px;
+                height: 19px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #ffffff;
+            }
+
+            img,
+            p {
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    @include jump-animation;
+                }
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

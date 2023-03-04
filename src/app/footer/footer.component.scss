@@ -1,0 +1,69 @@
+@mixin slide-icons-animation-footer {
+    animation-name: slideup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  
+    @keyframes slideup {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+}
+
+.sixth-section {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
+    .sixth-section-logo {
+        margin-left: 6.94%;
+        height: 15vh;
+        width: 200px;
+        // background-color: rgba(0,0,0, 0.4);
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .sixth-section-name {
+        height: 15vh;
+        width: 300px;
+        // background-color: rgba(0, 0, 0, 0.4);
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #ffffff;
+        }
+    }
+    .sixth-section-icons {
+        margin-right: 6.94%;
+        height: 15vh;
+        width: 200px;
+        img {
+            margin-left: 8px;
+            margin-right: 8px;
+            &:hover {
+                cursor: pointer;
+                @include slide-icons-animation-footer;
+            }
+        }
+    }
+}

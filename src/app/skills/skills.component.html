@@ -1,0 +1,9 @@
+<div id="skillset" class="third-section center-only-align column">
+    <h2>Skill set</h2>
+    <div class="third-section-pictures">
+        <div *ngFor="let skill of allSkills; let i = index" class="third-section-pictures-box center column">
+            <img src="assets/img/{{ skill['img'] }}">
+            <p>{{skill['name']}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+.fourth-section {
+    width: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+    .fourth-section-fourth-ball {
+        position: absolute;
+        top: 50px;
+        left: 39.1%;
+    }
+    .fourth-section-fifth-ball {
+        position: absolute;
+        top: 200px;
+        right: 6.94%;
+    }
+
+    .fourth-section-mywork-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 55%;
+        margin-left: 6.94%;
+        h3 {
+            font-family: "Baloo 2";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #5988ff;
+        }
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #000000;
+        }
+    }
+    .fourth-section-sixth-ball {
+        position: absolute;
+        top: 500px;
+        left: 0;
+    }
+
+    .fourth-section-seventh-ball {
+        position: absolute;
+        top: 1250px;
+        left: 6.94%;
+    }
+
+    .fourth-section-eight-ball {
+        position: absolute;
+        top: 860px;
+        right: 0;
+    }
+
+    .fourth-section-nine-ball {
+        position: absolute;
+        top: 1700px;
+        left: 9.10%;
+    }
+
+    .fourth-section-ten-ball {
+        position: absolute;
+        top: 2250px;
+        right: 6.94%;
+        z-index: 3;
+    }
+
+    // .fourth-section-eleven-ball {
+    //     position: absolute;
+    //     top: 2050px;
+    //     right: 43.78%;
+    // }
+}

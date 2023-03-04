@@ -1,0 +1,82 @@
+.second-section {
+    width: 100%;
+    min-height: 65vh;
+    background-color: #f5f5f5;
+    position: relative;
+
+    .second-section-ball-top-center {
+        display: flex;
+        justify-content: center;
+        img {
+            margin-top: -103px;
+            z-index: 2;
+            object-fit: cover;
+        }
+    }
+
+    .second-section-ball-right {
+        position: absolute;
+        top: 63px;
+        right: 22.5%;
+    }
+
+    .second-section-child {
+        // background-color: rgba(0,0,0, 0.5);
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        width: 90%;
+        .second-section-child-left-side-lets-work-together {
+            width: 50%;
+
+            font-family: "Baloo 2";
+            font-style: normal;
+            font-weight: 800;
+
+            font-size: 121px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #5988ff;
+        }
+
+        .second-section-child-right-side {
+            width: 50%;
+            .second-section-child-right-side-mytext {
+                span {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 23px;
+                    line-height: 120%;
+                    color: #000000;
+                }
+            }
+
+            .second-section-child-right-side-message {
+                button {
+                    margin-top: 10px;
+                    border: 2px solid #5988ff;
+                    border-radius: 10px;
+                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 23px;
+                    line-height: 120%;
+                    color: #5988ff;
+                    padding: 15px 30px;
+                    &:hover {
+                        cursor: pointer;
+                        color: white;
+                        background: radial-gradient(
+                            74.22% 74.22% at 19.79% 22.42%,
+                            #5988ff 6.25%,
+                            #5988ff 51.56%,
+                            #0043f0 100%
+                        );
+                    }
+                }
+            }
+        }
+    }
+}

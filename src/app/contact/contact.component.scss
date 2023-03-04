@@ -1,0 +1,150 @@
+.fifth-section {
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    background: #f5f5f5;
+
+    .fifth-section-contact-headline {
+        position: relative;
+        margin-left: 6.38%;
+        width: 86.12%;
+        h3 {
+            font-family: "Baloo 2";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 90px;
+            line-height: 120%;
+            color: #5988ff;
+        }
+        .fifth-section-eleventh-ball {
+            position: absolute;
+            left: 44%;
+        }
+    }
+
+    .fifth-section-contact-wrap {
+        margin-bottom: 100px;
+        margin-left: 6.38%;
+        width: 86.12%;
+        display: flex;
+        .fifth-section-contact-text {
+            // background-color: rgba(0,0,0, 0.6);
+            min-width: 50%;
+            max-width: 50%;
+            span {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 120%;
+                color: #5988ff;
+            }
+            .invitation {
+                width: 100%;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #000000;
+            }
+            .question {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #5988ff;
+            }
+            .contactme {
+                margin-left: 4px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+                color: #5988ff;
+            }
+            .fifth-section-twelfth-ball {
+                margin-top: 20px;
+                margin-left: 15%;
+            }
+        }
+
+        .fifth-section-contact-send-email {
+            display: flex;
+            // background-color: rgba(0, 0, 0, 0.2);
+            min-width: 50%;
+            max-width: 50%;
+            form {
+                input {
+                    width: calc(80% - 1px);
+                    background: #ffffff;
+                    border: 1px solid #5988ff;
+                    border-radius: 10px;
+                    margin-bottom: 35px;
+                    padding: 15px 25px;
+                    height: 35px;
+                    //isolation: isolate;
+                    outline: none;
+                    input:focus::placeholder {
+                        color: transparent;
+                    }
+                }
+                textarea {
+                    width: calc(80% - 1px);
+                    height: 180px;
+                    background: #ffffff;
+                    border: 1px solid #5988ff;
+                    padding: 15px 25px;
+                    border-radius: 10px;
+                    outline: none;
+                }
+    
+                .fifth-section-contact-send-email-button {
+                    button {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 23px;
+                        line-height: 120%;
+                        color: #5988ff;
+                        border: 2px solid #5988ff;
+                        border-radius: 10px;
+                        padding: 15px 25px;
+                        margin-top: 35px;
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: radial-gradient(
+                                74.22% 74.22% at 19.79% 22.42%,
+                                #5988ff 6.25%,
+                                #5988ff 51.56%,
+                                #0043f0 100%
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fifth-section-thirteenth-ball {
+        position: absolute;
+        bottom: 68px;
+        right: 6.31%;
+    }
+    .fifth-section-fourteenth-ball {
+        position: absolute;
+        bottom: 50px;
+        left: 6.94%;
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        border-radius: 41px;
+        height: 39px;
+        width: 39px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
