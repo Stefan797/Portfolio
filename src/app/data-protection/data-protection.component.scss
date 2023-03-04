@@ -1,0 +1,19 @@
+.data-protection-section {
+    width: 100%;
+    background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
+    position: relative;
+    .inside-container {
+        width: 86.12%;
+        margin-top: 2%;
+        margin-left: 6.94%;
+        padding-bottom: 32px;
+        img {
+            height: 96px;
+            width: 96px;
+            object-fit: contain;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

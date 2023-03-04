@@ -12,6 +12,9 @@
             height: 96px;
             width: 96px;
             object-fit: contain;
+            &:hover {
+                cursor: pointer;
+            }
         }
         h1 {
             font-family: "Baloo 2";
