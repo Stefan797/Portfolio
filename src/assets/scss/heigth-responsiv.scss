@@ -1,0 +1,14 @@
+$website-height: 800px;
+
+@media (min-height: 400px) and (max-height: 800px) {
+    // $website-height
+    // Hier kannst du die Styles für die Webseite definieren, wenn sie eine maximale Höhe von 800 Pixeln hat
+
+    .lineclass {
+        height: 220px !important;
+    }
+
+    .fourth-section-projects-container {
+        height: 50vh !important;
+    }
+}
