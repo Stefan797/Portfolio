@@ -2,18 +2,33 @@
 
     /*abovethefold*/
     .main-container {
+        overflow-x: hidden;
+
+        .first-section-img-stefan {
+            img {
+                position: absolute;
+                bottom: -10px;
+                left: 0%;
+                height: 81%;
+            }
+        }
+
         .first-section-name {
             position: absolute;
-            top: 22.56%;
-            right: 4.44%;
+            top: 12.56%;
+            right: 0;
             height: 25.78%;
             width: 44.8%;
+            left: 2%;
 
             .name {
+                font-size: 60px;
+                margin-top: 20px;
                 color: #ffffff;
             }
 
             .title {
+                font-size: 25px;
                 color: #ffffff;
             }
         }
