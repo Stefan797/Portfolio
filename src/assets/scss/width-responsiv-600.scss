@@ -1,0 +1,375 @@
+@media only screen and (max-width: 600px) {
+
+    /*abovethefold*/
+    .main-container {
+        .first-section-name {
+            position: absolute;
+            top: 22.56%;
+            right: 4.44%;
+            height: 25.78%;
+            width: 44.8%;
+
+            .name {
+                color: #ffffff;
+            }
+
+            .title {
+                color: #ffffff;
+            }
+        }
+    }
+
+    /*about*/
+    .second-section {
+        min-height: 80vh;
+        .second-section-ball-right {
+            position: absolute;
+            top: 63px;
+            right: 4.5%;
+        }
+
+        .second-section-child {
+            flex-direction: column;
+            position: absolute;
+            top: 26%;
+            left: 1.74%;
+            width: 90%;
+            margin-left: 1.74%;
+            .second-section-child-left-side-lets-work-together {
+                width: 100%;
+                font-size: 64px;
+                text-align: start;
+            }
+
+            .second-section-child-right-side {
+                margin-top: 20px;
+                width: 100%;
+                .second-section-child-right-side-mytext {
+                    text-align: start;
+                    span {
+                        font-size: 18px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    /*skills*/
+    .third-section {
+        h2 {
+           font-size: 82px;
+           margin-bottom: 2px;
+        }
+        .third-section-pictures {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 95.48%;
+            .third-section-pictures-box {
+                margin-top: 32px;
+                text-align: center;
+                img {
+                    width: 54px;
+                    height: 54px;
+                    margin-left: 16px;
+                    margin-right: 16px;
+                }
+                p {
+                    width: 85px;
+                    height: 19px;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    /*mywork*/
+    .fourth-section {
+        width: 100%;
+        background-color: #f5f5f5;
+        position: relative;
+        .fourth-section-fourth-ball {
+            position: absolute;
+            top: 50px;
+            right: 5.69% !important;
+            img {
+                height: 54px;
+                width: 54px;
+            }
+        }
+    
+        .fourth-section-mywork-text {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 55%;
+            margin-left: 6.94%;
+            h3 {
+                font-family: "Baloo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 96px;
+                line-height: 100%;
+                letter-spacing: 0.01em;
+                color: #5988ff;
+            }
+            p {
+                font-size: 23px;
+                line-height: 120%;
+                color: #000000;
+            }
+        }
+    }
+
+    /*projects component*/
+    .fourth-section-projects {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0%;
+        //padding-left: 6.94%;
+        background-color: #f5f5f5;
+    
+        .fourth-section-projects-container {
+            padding-top: 30px;
+            margin-bottom: 80px;
+            width: 100%;
+            height: 80vh !important;
+            display: flex;
+            flex-direction: column !important;
+    
+            .fourth-section-projects-container-image-container {
+                min-width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 80%;
+                    height: 100%;
+                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+                    object-fit: cover;
+                }
+            }
+    
+            .fourth-section-projects-container-project-datas {
+                display: flex;
+                width: 100%;
+                padding: 0 0 0 0;
+                z-index: 3;
+                align-items: center !important;
+                .fourth-section-projects-container-project-datas-name {
+                    text-align: center !important;
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                }
+    
+                .fourth-section-projects-container-project-datas-used-technologies {
+                    text-align: center !important;
+                    p {
+                        font-size: 23px;
+                        line-height: 120%;
+                        color: #5988ff;
+                    }
+                }
+    
+                .fourth-section-projects-container-project-datas-description {
+                    text-align: center !important;
+                    span {
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #000000;
+                    }
+                }
+
+                .fourth-section-projects-container-project-datas-tryout {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button {
+                        margin: 24px 0 0 4px !important;
+                        min-width: 180px;
+                        min-height: 60px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    /*contact component*/
+    .fifth-section {
+        width: 100%;
+        min-height: 60vh;
+        position: relative;
+        display: flex;
+        background: #f5f5f5;
+    
+        .fifth-section-contact-headline {
+            position: relative;
+            margin-left: 6.38%;
+            width: 86.12%;
+            h3 {
+                margin-bottom: 0;
+            }
+            .fifth-section-eleventh-ball {
+                position: absolute;
+                left: 44%;
+            }
+        }
+    
+        .fifth-section-contact-wrap {
+            margin-bottom: 100px;
+            margin-left: 6.38%;
+            width: 86.12%;
+            display: flex;
+            flex-direction: column;
+            .fifth-section-contact-text {
+                // background-color: rgba(0,0,0, 0.6);
+                min-width: 100%;
+                max-width: 100%;
+                span {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 120%;
+                    color: #5988ff;
+                }
+                .invitation {
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #000000;
+                }
+                .question {
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #5988ff;
+                }
+                .contactme {
+                    margin-left: 4px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #5988ff;
+                }
+                .fifth-section-twelfth-ball {
+                    margin-top: 20px;
+                    margin-left: 15%;
+                }
+            }
+    
+            .fifth-section-contact-send-email {
+                display: flex;
+                min-width: 100%;
+                max-width: 100%;
+                form {
+                    input {
+                        width: calc(80% - 1px);
+                        background: #ffffff;
+                        border: 1px solid #5988ff;
+                        border-radius: 10px;
+                        margin-bottom: 35px;
+                        padding: 15px 25px;
+                        height: 35px;
+                        //isolation: isolate;
+                        outline: none;
+                        input:focus::placeholder {
+                            color: transparent;
+                        }
+                    }
+                    textarea {
+                        width: calc(80% - 1px);
+                        height: 180px;
+                        background: #ffffff;
+                        border: 1px solid #5988ff;
+                        padding: 15px 25px;
+                        border-radius: 10px;
+                        outline: none;
+                    }
+        
+                    .fifth-section-contact-send-email-button {
+                        button {
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 400;
+                            margin-top: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .fifth-section-thirteenth-ball {
+            position: absolute;
+            bottom: 68px;
+            right: 6.31%;
+        }
+        .fifth-section-fourteenth-ball {
+            position: absolute;
+            bottom: 50px;
+            left: 6.94%;
+            background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            border-radius: 41px;
+            height: 39px;
+            width: 39px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    /*footer component*/
+
+    .sixth-section {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
+        flex-direction: column;
+        .sixth-section-logo {
+            margin-left: 6.94%;
+            height: 15vh;
+            width: 200px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .sixth-section-name {
+            height: 15vh;
+            width: 300px;
+            p {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+            span {
+                font-size: 16px;
+                line-height: 120%;
+                color: #ffffff;
+                margin-bottom: 2px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .sixth-section-icons {
+            margin-right: 6.94%;
+            height: 15vh;
+            width: 200px;
+            img {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
