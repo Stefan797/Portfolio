@@ -14,6 +14,7 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContentComponent } from './content/content.component';
+import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContentComponent } from './content/content.component';
     MyworkComponent,
     ProjectsComponent,
     SkillsComponent,
-    ContentComponent
+    ContentComponent,
+    MenuMobileComponent
   ],
   imports: [
     BrowserModule,

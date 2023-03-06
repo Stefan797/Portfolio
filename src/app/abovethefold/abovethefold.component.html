@@ -9,17 +9,11 @@
 
     <div class="main-container-left-side">
         <div class="first-section-img-stefan">
-            <div>
-                <img src="assets/img/myImage.png">
-            </div>
+            <img src="assets/img/myImage.png">
         </div>
     </div>
+    
     <div class="main-container-right-side column">
-
-        <div class="first-section-menu hide-mobile">
-            <app-menu></app-menu>
-        </div>
-
         <div class="first-section-name column">
             <div class="name" data-aos="fade-right">Hello! I am Stefan</div>
             <div style="margin-top: 17px;" class="title">FRONTEND</div>
@@ -31,10 +25,20 @@
                 <img class="lineclass" src="assets/img/line.png"> 
             </div>
         </div>
-        <div class="first-section-icons center column hide-mobile">
-            <a href="https://github.com/Stefan797" target="_blank"><img src="assets/img/github.png"></a> 
-            <a><img (click)="scroll('contact')" src="assets/img/email.png"></a> 
-            <a href="https://www.linkedin.com/in/stefan-h%C3%BCbner-0ba258234/" target="_blank"><img src="assets/img/linkedIn.png"></a>
-        </div>
+    </div>
+
+
+    <div class="first-section-menu hide-mobile">
+        <app-menu></app-menu>
+    </div>
+    
+    <div class="first-section-icons center column hide-mobile">
+        <a href="https://github.com/Stefan797" target="_blank"><img src="assets/img/github.png"></a> 
+        <a><img (click)="scroll('contact')" src="assets/img/email.png"></a> 
+        <a href="https://www.linkedin.com/in/stefan-h%C3%BCbner-0ba258234/" target="_blank"><img src="assets/img/linkedIn.png"></a>
+    </div>
+
+    <div class="drop-menu-mobile">
+        <app-menu-mobile></app-menu-mobile>
     </div>
 </div>
