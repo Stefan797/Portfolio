@@ -4,8 +4,18 @@
     background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
     height: 100vh;
     width: 100%;
+    display: flex;
     position: relative;
-
+    .first-section-img-left-corner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            height: 100%;
+        }
+    }
     .first-section-mylogo {
         position: absolute;
         top: 2.31%;
@@ -17,82 +27,99 @@
         }
     }
 
-    .first-section-menu {
-        position: absolute;
-        top: 4.62%;
-        right: 6.84%;
-    }
-
-    .first-section-img-left-corner {
-        img {
-            object-fit: contain;
-            max-width: 100%;
-            height: 100%;
+    .main-container-left-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // background-color: rgba(0,0,0, 0.2);
+        .first-section-img-stefan {
+            z-index: 2;
+            div {
+                width: fit-content;
+                height: fit-content;
+                background-color: rgba(0,0,0, 0.6);
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 8%;
+                    height: 80%;
+                }
+            }
+            
         }
     }
-    
-    .first-section-img-stefan {
-        img {
+
+    .main-container-right-side {
+        width: 50%;
+        height: 100%;
+        // background-color: rgba(0,0,0, 0.8);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        .first-section-menu {
             position: absolute;
-            bottom: 0;
-            left: 8%;
-            height: 80%;
+            top: 4.62%;
+            right: 6.84%;
         }
-    }
-
-    .first-section-name {
-        position: absolute;
-        top: 22.56%;
-        right: 4.44%;
-        height: 25.78%; 
-        width: 44.8%;
-
-        .name {
-            font-size: 64px;
-            line-height: 100%;
-            color: #5988ff;
-        }
-
-        .title {
-            font-family: "Baloo 2";
-            font-style: normal;
-            font-weight: 800;
-            font-size: 100px;
-            line-height: 120%;
+        .first-section-name {
+            // background-color: rgba(0,0,0, 0.8);
+            width: 100%;
+            height: 50%;
             display: flex;
+            justify-content: end;
+            align-items: flex-start;
+            .name {
+                font-size: 64px;
+                line-height: 100%;
+                color: #5988ff;
+            }
+            .title {
+                font-family: "Baloo 2";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 100px;
+                line-height: 120%;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.025em;
+                color: #5988ff;
+            }
+        }
+        .first-section-scroll-with-line {
+            // background-color: rgba(0,0,0, 0.4);
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: end;
             align-items: center;
-            letter-spacing: -0.025em;
-            color: #5988ff;
+            div {
+                width: fit-content;
+                // background-color: rgba(0,0,0, 0.9);
+                img {
+                    margin-top: 10px;
+                    object-fit: cover;
+                }
+                .lineclass {
+                    height: 330px;
+                }
+            }
         }
-    }
-
-    .first-section-scroll-with-line {
-        position: absolute;
-        bottom: 0;
-        right: 28.19%;
-
-        img {
-            margin-top: 10px;
-            object-fit: cover;
-        }
-
-        .lineclass {
-            height: 330px;
-        }
-    }
-
-    .first-section-icons {
-        position: absolute;
-        bottom: 6.71%;
-        right: 6.94%;
-
-        img {
-            margin-top: 35px;
-            width: 30px;
-            height: 30px;
-            &:hover {
-                cursor: pointer;
-                @include first-section-icons-slide-left-animation;
+        .first-section-icons {
+            position: absolute;
+            bottom: 6.71%;
+            right: 6.94%;
+    
+            img {
+                margin-top: 35px;
+                width: 30px;
+                height: 30px;
+                &:hover {
+                    cursor: pointer;
+                    @include first-section-icons-slide-left-animation;
+                }
             }
         }
     }
