@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'stefan.huebner97@web.de';
-$redirect = 'https://stefanhuebner97.de/stefanhuebner/success'; 
+$redirect = 'https://stefanhuebner97.de/home'; 
 
 ########### CONFIG END ###########
 

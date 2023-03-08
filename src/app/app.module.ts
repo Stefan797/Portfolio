@@ -15,6 +15,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContentComponent } from './content/content.component';
 import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

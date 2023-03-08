@@ -21,10 +21,11 @@
             </div>
         </div>
         <div class="fifth-section-contact-send-email column">
-            <form action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
-                <input type="text" placeholder="Your name" autocomplete="off" name="name" required>
-                <input type="email" placeholder="Your email" autocomplete="off" name="email" required>
-                <textarea type="text" placeholder="Your message" autocomplete="off" name="message" required></textarea>
+            <form #userform="ngForm">
+                {{userform.value | json}}
+                <input type="text" placeholder="Your name" autocomplete="off" name="name" ngModel required>
+                <input type="email" placeholder="Your email" autocomplete="off" name="email" ngModel required>
+                <textarea type="text" placeholder="Your message" autocomplete="off" name="message" ngModel required></textarea>
                 <div class="fifth-section-contact-send-email-button center">
                     <button type="submit" class="primary-button">Say hello ;)</button>
                 </div>
@@ -38,3 +39,12 @@
         <img (click)="scroll('home')" src="assets/img/arrow_up.png">
     </div>
 </div>
+
+<!-- <form action="https://stefanhuebner97.de/SendMail/send_mail.php" method="POST">
+    <input type="text" placeholder="Your name" autocomplete="off" name="name" required>
+    <input type="email" placeholder="Your email" autocomplete="off" name="email" required>
+    <textarea type="text" placeholder="Your message" autocomplete="off" name="message" required></textarea>
+    <div class="fifth-section-contact-send-email-button center">
+        <button type="submit" class="primary-button">Say hello ;)</button>
+    </div>
+</form> -->
