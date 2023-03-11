@@ -21,8 +21,7 @@
             </div>
         </div>
         <div class="fifth-section-contact-send-email column">
-            <form #userform="ngForm">
-                {{userform.value | json}}
+            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
                 <input type="text" placeholder="Your name" autocomplete="off" name="name" ngModel required>
                 <input type="email" placeholder="Your email" autocomplete="off" name="email" ngModel required>
                 <textarea type="text" placeholder="Your message" autocomplete="off" name="message" ngModel required></textarea>
@@ -40,6 +39,11 @@
     </div>
 </div>
 
+<!-- https://www.youtube.com/watch?v=3JflsnMN3GQ -->
+<!-- 
+[(ngModel)]="formData.name"
+[(ngModel)]="formData.email" -->
+
 <!-- <form action="https://stefanhuebner97.de/SendMail/send_mail.php" method="POST">
     <input type="text" placeholder="Your name" autocomplete="off" name="name" required>
     <input type="email" placeholder="Your email" autocomplete="off" name="email" required>
@@ -48,3 +52,13 @@
         <button type="submit" class="primary-button">Say hello ;)</button>
     </div>
 </form> -->
+
+
+<!-- {{userform.value | json}} -->
+<!-- (ngSubmit)="onSubmit()" #userform="ngForm" -->
+
+<!-- (click)="userForm.reset()" -->
+
+<!-- how to send a form data to server using post api in angular -->
+
+<!-- https://stackblitz.com/edit/github-pkr2hv?file=README.md,src%2Fapp%2Fcontact%2Fcontact.component.ts,src%2Fapp%2Fcontact%2Fcontact.component.html -->
