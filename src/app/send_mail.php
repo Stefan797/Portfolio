@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'stefan.huebner97@web.de';
-$redirect = 'https://stefanhuebner97.de/home'; 
+// $redirect = 'https://stefanhuebner97.de/home'; 
 
 ########### CONFIG END ###########
 
@@ -45,7 +45,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $emailText = 'Neue Nachricht von ' . $_POST['email'] . '\n\n' . $_POST['message'];
 
         mail($recipient, $subject, $emailText, $headers);
-        header("Location: " . $redirect); 
+        //header("Location: " . $redirect);  
 
         break;
     default: //Reject any non POST or OPTIONS requests.
