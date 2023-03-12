@@ -112,10 +112,20 @@
         .fourth-section-fourth-ball {
             position: absolute;
             top: 50px;
-            right: 5.69% !important;
+            left: 67.44% !important;
             img {
                 height: 54px;
                 width: 54px;
+            }
+        }
+
+        .fourth-section-fifth-ball {
+            position: absolute;
+            top: 230px;
+            right: 6.94%;
+            img {
+                height: 74px;
+                width: 74px;
             }
         }
 
@@ -124,21 +134,50 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            width: 55%;
+            width: 86.12%;
             margin-left: 6.94%;
             h3 {
-                font-family: "Baloo 2";
-                font-style: normal;
-                font-weight: 600;
-                font-size: 96px;
-                line-height: 100%;
-                letter-spacing: 0.01em;
-                color: #5988ff;
+                font-size: 50px !important;
+                margin-bottom: 0;
+                margin-top: 120px;
             }
             p {
-                font-size: 23px;
+                font-size: 20px;
                 line-height: 120%;
                 color: #000000;
+                margin-bottom: 80px;
+            }
+        }
+
+        .fourth-section-sixth-ball {
+            img {
+                width: 68%;
+            }
+        }
+
+        .fourth-section-eight-ball {
+            position: absolute;
+            top: 924px;
+            right: 0%;
+            img {
+                width: 256px;
+            }
+        }
+
+        .fourth-section-nine-ball {
+            position: absolute;
+            top: 1731px;
+            left: 2.1%;
+        }
+
+        .fourth-section-ten-ball {
+            position: absolute;
+            top: 2520px;
+            right: 6.94%;
+            z-index: 2 !important;
+            img {
+                height: 50px;
+                width: 50px;
             }
         }
     }
@@ -152,10 +191,10 @@
         background-color: #f5f5f5;
 
         .fourth-section-projects-container {
-            padding-top: 30px;
-            margin-bottom: 80px;
+            padding-top: 0px !important;
+            margin-bottom: 50px !important;
             width: 100%;
-            height: 80vh !important;
+            height: 70vh !important;
             display: flex;
             flex-direction: column !important;
 
@@ -190,7 +229,7 @@
                 .fourth-section-projects-container-project-datas-used-technologies {
                     text-align: center !important;
                     p {
-                        font-size: 23px;
+                        font-size: 17px;
                         line-height: 120%;
                         color: #5988ff;
                     }
@@ -211,8 +250,9 @@
                     align-items: center;
                     button {
                         margin: 24px 0 0 4px !important;
-                        min-width: 180px;
-                        min-height: 60px;
+                        min-width: 155px !important;
+                        min-height: 50px !important;
+                        padding: 10px 30px !important;
                     }
                 }
             }
@@ -236,7 +276,11 @@
             }
             .fifth-section-eleventh-ball {
                 position: absolute;
-                left: 44%;
+                left: 33%;
+                top: -32px;
+                img {
+                    width: 70%;
+                }
             }
         }
 
