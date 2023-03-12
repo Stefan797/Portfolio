@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(data) {
+    console.log(data);
     this.http.post('https://stefanhuebner97.de/SendMail/send_mail.php', data)
     .subscribe((result)=> {
       console.log('result', result);

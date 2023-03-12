@@ -13,9 +13,6 @@ export class AppComponent implements OnInit {
     AOS.init({
       once: true,
       debounceDelay: 200
-    });
-    console.log('Libary is', AOS);
-    
-    console.log('My Screenwidth is', window.innerWidth);
+    });  
   }
 }

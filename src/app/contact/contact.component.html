@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="fifth-section-contact-send-email column">
-            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value); userPost.reset()">
                 <input type="text" placeholder="Your name" autocomplete="off" name="name" ngModel required>
                 <input type="email" placeholder="Your email" autocomplete="off" name="email" ngModel required>
                 <textarea type="text" placeholder="Your message" autocomplete="off" name="message" ngModel required></textarea>
