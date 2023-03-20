@@ -6,23 +6,23 @@
 </div>
 
 <div id="mobile-menu-container" class="mobile-menu-container d-none hide-not-mobile">
-    <div class="insidebox display-felx column">
-        <div class="upper-part">
+    <div class="insidebox">
 
+        <div class="insidebox-logo">
             <img src="assets/img/mylogoblue.png">
-
-            <div class="test column">
-                <img src="assets/img/Vector 6.png">
-                <img src="assets/img/Vector 6.png">
-                <img src="assets/img/Vector 6.png">
-            </div>
         </div>
 
-        <div class="lower-part center column">
-            <div class="choose-side-section-link">About me</div>
-            <div class="choose-side-section-link">Skill set</div>
-            <div class="choose-side-section-link">My work</div>
-            <div class="choose-side-section-link">Contact</div>
+        <div (click)="closesmartphonemenu()" class="insidebox-back display-flex column">
+            <img src="assets/img/Vector 6.png">
+            <img src="assets/img/Vector 6.png">
+            <img src="assets/img/Vector 6.png">
+        </div>
+
+        <div class="insidebox-choose-section-container center column">
+            <div (click)="disable(); scroll('about')" class="choose-side-section-link">About me</div>
+            <div (click)="disable(); scroll('skillset')" class="choose-side-section-link">Skill set</div>
+            <div (click)="disable(); scroll('mywork')" class="choose-side-section-link">My work</div>
+            <div (click)="disable(); scroll('contact')" class="choose-side-section-link">Contact</div>
         </div>
     </div>
 </div>
