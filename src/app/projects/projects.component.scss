@@ -1,10 +1,19 @@
 @import 'src/assets/scss/mixins';
 
 .fourth-section-projects {
-    min-width: 86.12%;
-    max-width: 86.12%;
-    margin-left: 6.94%;
+    min-width: 100vw;
+    // min-width: 86.12%;
+    max-width: 86.12vw;
+    padding-left: 6.94%;
+    // margin-left: 6.94%;
     background-color: #f5f5f5;
+    position: relative;
+
+    .balls {
+        img {
+            position: absolute;
+        }
+    }
 
     .fourth-section-projects-container {
         padding-top: 30px;

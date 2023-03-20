@@ -1,6 +1,6 @@
 <div class="fourth-section-projects center" *ngFor="let project of allProjects; let i = index">
     <div class="balls">
-        <img src="assets/img/ellipse_six.png" *ngIf="i==0">
+        <img src="assets/img/ellipse_six.png" *ngIf="i==0"> <!--[style.left]="project['ballPosition.left'] + 'px'"-->
         <img src="assets/img/ellipse_seven.png" *ngIf="i==1">
         <img src="assets/img/ellipse_eight.png" *ngIf="i==1">
         <img src="assets/img/ellipse_nine.png" *ngIf="i==2">
