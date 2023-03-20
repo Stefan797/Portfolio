@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -21,9 +21,17 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(data) {
-    console.log(data);
-    this.http.post('https://stefanhuebner97.de/SendMail/send_mail.php', data)
-    .subscribe((result)=> {
+
+    const formData = new FormData();
+    
+    formData.append('name', data.name);
+    formData.append('email', data.email);
+    formData.append('message', data.message);
+   
+
+    const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+
+    this.http.post('https://stefanhuebner97.de/SendMail/send_mail.php', formData, { headers: headers }).subscribe((result)=> {
       console.log('result', result);
     });
   }

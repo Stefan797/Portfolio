@@ -6,6 +6,7 @@ export const allProjects = [
         img: 'Movieflix.jpg',
         url: 'https://stefanhuebner97.de/Pokedex/',
         doc: 'https://stefanhuebner97.de/Pokedex/out'
+        // ballPosition: {left: -100, top: 100}
     },
     {
         name: 'El Pollo Loco',
@@ -14,6 +15,7 @@ export const allProjects = [
         img: 'ElPolloLoco.png',
         url: 'https://stefanhuebner97.de/ElPolloLoco',
         doc: 'https://stefanhuebner97.de/ElPolloLoco/out'
+        // ballPosition: {right: -80, top: 120}
     },
     {
         name: 'Pokedex',
