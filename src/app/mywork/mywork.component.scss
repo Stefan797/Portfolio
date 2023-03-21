@@ -14,12 +14,13 @@
     }
 
     .fourth-section-mywork-text {
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         width: 55%;
-        margin-left: 6.94%;
+        padding-left: 6.94%;
         h3 {
             font-family: "Baloo 2";
             font-style: normal;
@@ -67,5 +68,5 @@
     }
 }
 
-@import 'src/assets/scss/width-responsiv-600.scss';
-@import 'src/assets/scss/responsiv.scss';
+@import 'src/assets/scss/width-responsive-600.scss';
+@import 'src/assets/scss/responsive.scss';

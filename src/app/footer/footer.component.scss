@@ -1,12 +1,13 @@
 @import 'src/assets/scss/mixins';
 
 .sixth-section {
+    box-sizing: border-box;
     width: 100%;
     height: 40vh;
     position: relative;
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
     .sixth-section-logo {
-        margin-left: 6.94%;
+        padding-left: 6.94%;
         height: 15vh;
         width: 200px;
         img {
@@ -36,7 +37,7 @@
         }
     }
     .sixth-section-icons {
-        margin-right: 6.94%;
+        padding-right: 6.94%;
         height: 15vh;
         width: 200px;
         img {
@@ -50,5 +51,5 @@
     }
 }
 
-@import 'src/assets/scss/width-responsiv-600.scss';
-@import 'src/assets/scss/responsiv.scss';
+@import 'src/assets/scss/width-responsive-600.scss';
+@import 'src/assets/scss/responsive.scss';
