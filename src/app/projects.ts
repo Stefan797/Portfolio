@@ -7,7 +7,8 @@ export const allProjects = [
         url: 'https://movieflix.stefanhuebner97.de/home',
         doc: 'https://stefanhuebner97.de/Pokedex/out',
         ballPosition: {left: 0, bottom: -20},
-        secondBallPosition: {}
+        secondBallPosition: {},
+        imageslide: 'fade-right'
     },
     {
         name: 'El Pollo Loco',
@@ -17,7 +18,8 @@ export const allProjects = [
         url: 'https://stefanhuebner97.de/ElPolloLoco',
         doc: 'https://stefanhuebner97.de/ElPolloLoco/out',
         ballPosition: {left: 6.94, bottom: -5},
-        secondBallPosition: {right: 0, top: 0}
+        secondBallPosition: {right: 0, top: 0},
+        imageslide: 'fade-right'
     },
     {
         name: 'Pokedex',
@@ -27,7 +29,8 @@ export const allProjects = [
         url: 'https://stefanhuebner97.de/Pokedex/',
         doc: 'https://stefanhuebner97.de/Pokedex/out',
         ballPosition: {left: 9.10, bottom: -15},
-        secondBallPosition: {}
+        secondBallPosition: {},
+        imageslide: 'fade-right'
     },
     {
         name: 'Kochwelt',
@@ -37,6 +40,7 @@ export const allProjects = [
         url: 'https://stefanhuebner97.de/Kochwelt',
         doc: 'https://stefanhuebner97.de/Kochwelt/out',
         ballPosition: {right: 6.94, bottom: -15},
-        secondBallPosition: {}
+        secondBallPosition: {},
+        imageslide: 'fade-right'
     }
 ];

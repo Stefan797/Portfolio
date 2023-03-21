@@ -9,6 +9,7 @@ import { allProjects } from '../projects';
 export class ProjectsComponent implements OnInit {
   
   allProjects: Object[] = [];
+  dataaos = ['fade-right', 'fade-left', 'fade-right', 'fade-left'];
   
   constructor() {}
 
@@ -17,6 +18,12 @@ export class ProjectsComponent implements OnInit {
       this.allProjects.push(Object.assign({}, project));
       console.log(project);
     });
+  }
+
+  getdata(index) {
+    console.log(index);
+    index = this.dataaos[index];
+    return this.dataaos[index];
   }
 
   visitProject(url: string) {
