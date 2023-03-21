@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { allProjects } from '../projects';
 
 @Component({
@@ -11,7 +11,9 @@ export class ProjectsComponent implements OnInit {
   allProjects: Object[] = [];
   dataaos = ['fade-right', 'fade-left', 'fade-right', 'fade-left'];
   
-  constructor() {}
+  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
+    renderer.setAttribute(elementRef.nativeElement, 'img', 'data-aos');
+  }
 
   ngOnInit(): void {
     allProjects.forEach((project) => {
@@ -21,9 +23,9 @@ export class ProjectsComponent implements OnInit {
   }
 
   getdata(index) {
-    console.log(index);
+    // console.log(index);
     index = this.dataaos[index];
-    return this.dataaos[index];
+    return index;
   }
 
   visitProject(url: string) {
