@@ -1,17 +1,19 @@
 <div class="fourth-section-projects center" *ngFor="let project of allProjects; let i = index">
-    <div class="balls">
-        <img src="assets/img/ellipse_six.png" *ngIf="i==0"> <!--[style.left]="project['ballPosition.left'] + 'px'"-->
-        <img src="assets/img/ellipse_seven.png" *ngIf="i==1">
-        <img src="assets/img/ellipse_eight.png" *ngIf="i==1">
-        <img src="assets/img/ellipse_nine.png" *ngIf="i==2">
-        <img src="assets/img/ellipse_ten.png" *ngIf="i==3">
-    </div>
-    <!-- <img src="...." 
-        [style.right.px]="project.ballPosition.right" 
-        [style.right.px]="project.ballPosition.top"> -->
-    <div class="fourth-section-projects-container" [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}">
+    
+    
+
+    <div class="fourth-section-projects-container center" [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}">
+        
+        <div class="balls">
+            <img src="assets/img/ellipse_six.png" class="ball-six-smartphone" *ngIf="i==0" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'"> 
+            <img src="assets/img/ellipse_seven.png" class="hide-mobile" *ngIf="i==1" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_eight.png" class="ball-eight-smartphone" *ngIf="i==1" [style.right]="project['secondBallPosition']['right'] + '%'" [style.top]="project['secondBallPosition']['top'] + '%'">
+            <img src="assets/img/ellipse_nine.png" class="ball-nine-smartphone" *ngIf="i==2" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_ten.png" class="ball-ten-smartphone" *ngIf="i==3" [style.right]="project['ballPosition']['right'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
+        </div>
+
         <div class="fourth-section-projects-container-image-container">
-            <img data-aos="fade-right" class="my-element" src="assets/img/{{ project['img'] }}">
+            <img data-aos="fade-right" class="my-element" src="assets/img/{{ project['img'] }}"> 
         </div>
 
         <div class="fourth-section-projects-container-project-datas column"

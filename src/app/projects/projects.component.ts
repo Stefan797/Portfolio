@@ -15,6 +15,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     allProjects.forEach((project) => {
       this.allProjects.push(Object.assign({}, project));
+      console.log(project);
     });
   }
 
