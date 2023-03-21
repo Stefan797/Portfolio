@@ -18,9 +18,12 @@
         width: 70%;
         display: flex;
         flex-wrap: wrap;
+        // background-color: rgba(0,0,0, 0.4);
 
         .third-section-pictures-box {
             text-align: center;
+            margin-bottom: 40px;
+            // background-color: rgba(0,0,0, 0.8);
             img {
                 width: 70px;
                 height: 75px;

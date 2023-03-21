@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
+  scroll(id: string){
+    document.getElementById(id).scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  }
 }
