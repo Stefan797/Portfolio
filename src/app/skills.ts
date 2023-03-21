@@ -32,8 +32,8 @@ export const allSkills = [
         img: 'Restapi.png',
     },
     {
-        name: 'Redis',
-        img: 'redis.png',
+        name: 'Database',
+        img: 'database.png',
     },
     {
         name: 'Command',
@@ -47,4 +47,8 @@ export const allSkills = [
         name: 'Directories',
         img: 'directory.png',
     }
+    // {
+    //     name: 'SQL',
+    //     img: 'sql.png',
+    // }
 ];
