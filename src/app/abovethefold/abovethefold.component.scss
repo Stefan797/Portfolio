@@ -52,7 +52,7 @@
         width: 50%;
         height: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         position: relative;
         .first-section-name {
@@ -60,7 +60,7 @@
             width: 100%;
             height: 55%;
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             align-items: flex-start;
             .name {
                 font-size: 70px;
@@ -125,5 +125,5 @@
 @import "src/assets/scss/heigth-responsive.scss";
 @import "src/assets/scss/width-responsive-600.scss";
 @import "src/assets/scss/width-responsive-800.scss";
-@import "src/assets/scss/width-responsive-1200.scss";
+@import "src/assets/scss/width-responsive-1500.scss";
 @import "src/assets/scss/responsive.scss";

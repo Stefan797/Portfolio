@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) and (min-width: 801px)  {
+@media only screen and (max-width: 1500px) and (min-width: 801px) {
     /*abovethefold*/
     .first-section-name {
         .name {
@@ -7,11 +7,12 @@
         .title {
             font-size: 64px !important;
         }
+    }
 
-    }
-    .white {
-        color: white !important;
-    }
+    // .white {
+    //     color: white !important;
+    // }
+
     /*about*/
     .second-section-child {
         .second-section-child-left-side-lets-work-together {
@@ -19,15 +20,15 @@
                 font-size: 77px !important;
             }
         }
-        
+
         .second-section-child-right-side {
             padding-top: 10% !important;
+            margin-bottom: 50px;
             .second-section-child-right-side-mytext {
                 span {
                     font-size: 19px !important;
                 }
-            } 
+            }
         }
-        
     }
 }
