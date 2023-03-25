@@ -12,7 +12,7 @@ export const allProjects = [
     },
     {
         name: 'El Pollo Loco',
-        technologies: 'HTML | JS | Object Orienierte Programmierung',
+        technologies: 'HTML | JS | Objekt Orientierte Programmierung',
         description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
         img: 'ElPolloLoco.png',
         url: 'https://stefanhuebner97.de/ElPolloLoco',

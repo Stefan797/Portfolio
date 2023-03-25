@@ -375,4 +375,22 @@
     }
 
     /*footer component*/
+    .sixth-section {
+        flex-direction: column;
+        justify-content: normal !important;
+        .sixth-section-name {
+            span {
+                margin-top: 20px;
+            }
+        }
+        .sixth-section-logo {
+            padding-left: 0 !important;
+        }
+        .sixth-section-icons {
+            padding-right: 0 !important;
+            a {
+                margin: 0 16px 0;
+            }
+        }
+    }
 }

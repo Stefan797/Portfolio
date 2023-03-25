@@ -1,0 +1,198 @@
+@media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: landscape) {
+    /*abovethefold*/
+
+    .first-section-img-left-corner {
+        img {
+            max-width: 44% !important;
+        }
+    }
+    .first-section-img-stefan {
+        img {
+            margin-left: 45px;
+            width: 60% !important;
+        }
+    }
+
+    .first-section-name {
+        margin-left: -80px;
+        .name {
+            font-size: 32px !important;
+        }
+        .title {
+            font-size: 26px !important;
+        }
+    }
+
+    .first-section-scroll-with-line {
+        div {
+            display: none;
+        }
+    }
+
+    .drop-menu-mobile {
+        top: 6.71% !important;
+        right: 6.94% !important;
+    }
+
+    .hide-between-600-and-800 {
+        display: flex !important;
+    }
+
+    .hide-not-mobile {
+        display: flex !important;
+    }
+
+    .hide-menu-smartphone-landscape {
+        display: none !important;
+    }
+
+    /* about */
+
+    .second-section-ball-top-center {
+        img {
+            width: 22%;
+            margin-top: -81.4px !important;
+        }
+    }
+
+    .second-section-child {
+        flex-direction: column;
+        padding-left: 0% !important;
+        .second-section-child-left-side-lets-work-together {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            justify-content: flex-start !important;
+            h2 {
+                padding-left: 100px;
+                font-size: 60px !important;
+            }
+        }
+
+        .second-section-child-right-side {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            padding-top: 0% !important;
+
+            .second-section-child-right-side-mytext {
+                justify-content: flex-start !important;
+                span {
+                    padding-left: 100px;
+                }
+            }
+            .second-section-child-right-side-message {
+                padding-left: 0 !important;
+                padding-left: 150px !important;
+                button {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    /*skills*/
+    .third-section {
+        h2 {
+            font-size: 66px !important;
+        }
+        .third-section-pictures {
+            .third-section-pictures-box {
+                img {
+                    width: 50px !important;
+                    height: 50px !important;
+                    margin-left: 24px !important;
+                    margin-right: 24px !important;
+                }
+            }
+        }
+    }
+
+    /*my work*/
+
+    .fourth-section-fourth-ball {
+        img {
+            width: 53%;
+        }
+    }
+
+    .fourth-section-fifth-ball {
+        img {
+            width: 53%;
+            margin-top: -40px;
+        }
+    }
+
+    .fourth-section-mywork-text {
+        h3 {
+            font-size: 60px !important;
+        }
+    }
+
+    /*my work projects*/
+    .fourth-section-projects-container {
+        .fourth-section-projects-container-image-container {
+            img {
+                min-height: 80vh !important;
+            }
+        }
+        .fourth-section-projects-container-project-datas {
+            .fourth-section-projects-container-project-datas-name {
+                h3 {
+                    margin: 0 0 0 !important;
+                }
+            }
+
+            .fourth-section-projects-container-project-datas-tryout {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    margin: 20px 0px 0px !important;
+                    min-width: 150px !important;
+                }
+                button:first-child {
+                    margin-right: 8px !important;
+                }
+            }
+        }
+    }
+
+    .ball-eight-smartphone {
+        width: 40%;
+    }
+
+    /* contact */
+
+    .fifth-section-contact-headline {
+        .fifth-section-eleventh-ball {
+            img {
+                width: 50%;
+            }
+        }
+        h3 {
+            font-size: 60px !important;
+        }
+    }
+
+    .fifth-section-contact-text {
+        padding-right: 3%;
+    }
+
+    .fifth-section-twelfth-ball {
+        img {
+            width: 50%;
+        }
+    }
+
+    .fifth-section-thirteenth-ball {
+        bottom: 20px !important;
+        right: 3.31% !important;
+    }
+
+    /* footer */
+
+    .sixth-section-name {
+        .sixth-section-icons {
+            display: none !important;
+        }
+    }
+}
