@@ -399,9 +399,10 @@
 
     /* imprint */
 
-    // .imprint-section {
-    //     height: fit-content !important;
-    // }
+    .imprint-section {
+        min-height: 100vh !important;
+        height: fit-content !important;
+    }
 
     .imprint-ball-two {
         right: 22% !important;
