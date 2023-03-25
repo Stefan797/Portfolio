@@ -1,6 +1,5 @@
 .imprint-section {
     height: 100vh;
-    overflow-y: hidden;
     width: 100%;
     background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
     position: relative;
@@ -74,3 +73,10 @@
         bottom: 3%;
     }
 }
+
+@import "src/assets/scss/heigth-responsive.scss";
+@import "src/assets/scss/width-responsive-600.scss";
+@import "src/assets/scss/width-responsive-800.scss";
+@import "src/assets/scss/width-responsive-1500.scss";
+@import "src/assets/scss/width-responsive-smartphone-landscape.scss";
+@import "src/assets/scss/responsive.scss";

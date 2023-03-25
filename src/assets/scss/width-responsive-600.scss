@@ -67,6 +67,7 @@
                 .second-section-child-right-side-mytext {
                     text-align: start;
                     span {
+                        margin-left: 4px;
                         font-size: 18px;
                         color: #000000;
                     }
@@ -74,6 +75,9 @@
                 .second-section-child-right-side-message {
                     padding-top: 2%;
                     padding-left: 0 !important;
+                    button {
+                        margin-left: 4px;
+                    }
                 }
             }
         }
@@ -82,7 +86,7 @@
     /*skills*/
     .third-section {
         h2 {
-            font-size: 82px;
+            font-size: 72px !important;
             margin-bottom: 2px;
         }
         .third-section-pictures {
@@ -130,8 +134,8 @@
             top: 230px;
             right: 6.94%;
             img {
-                height: 74px;
-                width: 74px;
+                height: 60px;
+                width: 60px;
             }
         }
 
@@ -181,11 +185,11 @@
                 }
                 .ball-nine-smartphone {
                     left: 2% !important;
-                    bottom: 40% !important;
+                    bottom: 43% !important;
                 }
                 .ball-ten-smartphone {
-                    right: 1.94% !important;
-                    bottom: 40% !important;
+                    right: 0.5% !important;
+                    bottom: 46% !important;
                 }
             }
 
@@ -355,9 +359,8 @@
         }
 
         .fifth-section-thirteenth-ball {
-            position: absolute;
-            bottom: 68px;
-            right: 6.31%;
+            bottom: 20px !important;
+            right: 2.31% !important;
         }
         .fifth-section-fourteenth-ball {
             position: absolute;
@@ -391,6 +394,22 @@
             a {
                 margin: 0 16px 0;
             }
+        }
+    }
+
+    /* imprint */
+
+    .imprint-section {
+        height: fit-content !important;
+    }
+
+    .imprint-ball-two {
+        right: 22% !important;
+    }
+
+    .inside-container {
+        button {
+            margin-bottom: 40px;
         }
     }
 }

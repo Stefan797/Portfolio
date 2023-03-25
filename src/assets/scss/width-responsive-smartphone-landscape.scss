@@ -195,4 +195,25 @@
             display: none !important;
         }
     }
+
+    /* imprint */
+
+    .imprint-section {
+        height: fit-content !important;
+    }
+
+    .imprint-ball-one {
+        right: 4.9% !important;
+        bottom: 3% !important;
+    }
+
+    .imprint-ball-four {
+        display: none !important;
+    }
+
+    .inside-container {
+        button {
+            margin-bottom: 40px;
+        }
+    }
 }
