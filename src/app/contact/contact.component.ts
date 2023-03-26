@@ -41,9 +41,11 @@ export class ContactComponent implements OnInit {
     } 
     document.getElementById('resultcontainer').classList.remove('d-none');
     document.getElementById('resulttext').innerHTML = result;
+    document.getElementById('resultcontainer').classList.add('buttonanimation');
     
     setTimeout(() => {
       document.getElementById('resultcontainer').classList.add('d-none');
+      document.getElementById('resultcontainer').classList.remove('buttonanimation');
       if ('Unfortunately, the e-mail could not be sent.' == result) {
         document.getElementById('resultcontainer').classList.remove('errorred');
       }

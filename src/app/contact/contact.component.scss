@@ -1,3 +1,5 @@
+@import 'src/assets/scss/mixins';
+
 .fifth-section {
     width: 100%;
     min-height: 60vh;
@@ -140,6 +142,11 @@
 
     .errorred {
         background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #ff5959 6.25%, #ff5959 51.56%, #f00000 100%) !important;
+    }
+
+    .buttonanimation {
+        // transition: all 2s ease-in-out;
+        @include jump-animation;
     }
 }
 
