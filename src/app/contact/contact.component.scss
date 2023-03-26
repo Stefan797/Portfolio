@@ -91,7 +91,7 @@
                     border-radius: 10px;
                     outline: none;
                 }
-    
+
                 .fifth-section-contact-send-email-button {
                     button {
                         font-family: "Montserrat";
@@ -113,7 +113,8 @@
         position: absolute;
         bottom: 50px;
         left: 6.94%;
-        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         border-radius: 41px;
         height: 39px;
         width: 39px;
@@ -121,8 +122,27 @@
             cursor: pointer;
         }
     }
+
+    .email-send-answer {
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
+        border: 2px solid white;
+        width: fit-content;
+        padding: 20px 30px;
+        border-radius: 8px;
+        position: absolute;
+        right: 20%;
+        bottom: 3%;
+        span {
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .errorred {
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #ff5959 6.25%, #ff5959 51.56%, #f00000 100%) !important;
+    }
 }
 
-@import 'src/assets/scss/width-responsive-600.scss';
+@import "src/assets/scss/width-responsive-600.scss";
 @import "src/assets/scss/width-responsive-smartphone-landscape.scss";
-@import 'src/assets/scss/responsive.scss';
+@import "src/assets/scss/responsive.scss";

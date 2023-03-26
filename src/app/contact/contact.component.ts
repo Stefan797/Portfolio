@@ -7,9 +7,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  
 
-  constructor( private http:HttpClient ) {}
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
@@ -20,20 +19,35 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit(data) {
+  async onSubmit(data) {
 
     const formData = new FormData();
-    
+
     formData.append('name', data.name);
     formData.append('email', data.email);
     formData.append('message', data.message);
-   
 
-    const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+    let apiUrl = 'https://stefanhuebner97.de/SendMail/send_mail.php';
 
-    this.http.post('https://stefanhuebner97.de/SendMail/send_mail.php', formData, { headers: headers }).subscribe((result)=> {
-      console.log('result', result);
-    });
-  }
+    let result = await fetch(apiUrl, { method: 'POST', body: formData})
+    .then((response) => response.text());
   
+    this.showEmailSendInformation(result);
+  }
+
+  showEmailSendInformation(result) {
+    if ('Unfortunately, the e-mail could not be sent.' == result) {
+      document.getElementById('resultcontainer').classList.add('errorred');
+    } 
+    document.getElementById('resultcontainer').classList.remove('d-none');
+    document.getElementById('resulttext').innerHTML = result;
+    
+    setTimeout(() => {
+      document.getElementById('resultcontainer').classList.add('d-none');
+      if ('Unfortunately, the e-mail could not be sent.' == result) {
+        document.getElementById('resultcontainer').classList.remove('errorred');
+      }
+    }, 5000);
+  }
+
 }

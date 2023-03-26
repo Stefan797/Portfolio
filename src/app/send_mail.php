@@ -40,13 +40,16 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  " . $_POST['email'];
 
-        $emailText = 'Neue Nachricht von ' . $_POST['email'] . '\n\n' . $_POST['message'];
+        $emailText = $_POST['message'];
 
-        mail($recipient, $subject, $emailText, $headers);
-        //header("Location: " . $redirect);  
-
+        $result = mail($recipient, $subject, $emailText, $headers);
+        //header("Location: " . $redirect);
+        if($result == FALSE)
+            echo "Unfortunately, the e-mail could not be sent.";
+        if($result == TRUE)
+            echo "Your e-mail was sent successfully.";  
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);
