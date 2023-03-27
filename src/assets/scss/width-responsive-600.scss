@@ -9,6 +9,7 @@
             max-height: 50%;
             position: relative;
             .first-section-img-stefan {
+                height: 130% !important;
                 img {
                     height: 100%;
                     width: 110%;
@@ -374,6 +375,9 @@
             &:hover {
                 cursor: pointer;
             }
+        }
+        .email-send-answer {
+            right: 8% !important;
         }
     }
 

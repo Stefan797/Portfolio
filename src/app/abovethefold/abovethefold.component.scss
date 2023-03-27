@@ -41,6 +41,8 @@
         align-items: flex-end;
         .first-section-img-stefan {
             z-index: 2;
+            display: flex;
+            height: 80%;
             img {
                 height: 100%;
                 width: 120%;
@@ -127,4 +129,6 @@
 @import "src/assets/scss/width-responsive-800.scss";
 @import "src/assets/scss/width-responsive-1500.scss";
 @import "src/assets/scss/width-responsive-smartphone-landscape.scss";
+@import "src/assets/scss/responsive-ipad-mini.scss";
+@import "src/assets/scss/responsive-ipad-air.scss";
 @import "src/assets/scss/responsive.scss";
