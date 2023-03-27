@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1500px) and (min-width: 801px) {
+@media only screen and (max-width: 1500px) and (min-width: 901px) {
     /*abovethefold*/
     .first-section-name {
         .name {
@@ -29,6 +29,31 @@
                     font-size: 19px !important;
                 }
             }
+        }
+    }
+    
+    /* mywork */
+    
+    .fourth-section-fourth-ball {
+        left: 50% !important;
+    }
+
+    /* mywork projects */
+    .fourth-section-projects-container-image-container {
+        img {
+            height: 40vh !important;
+        }
+    }
+
+    .fourth-section-projects-container-project-datas-tryout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            margin: 24px 0 0 4px !important;
+            min-width: 140px !important;
+            min-height: 50px !important;
+            padding: 10px 30px !important;
         }
     }
 

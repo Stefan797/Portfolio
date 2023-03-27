@@ -1,10 +1,7 @@
 @import 'src/assets/scss/mixins';
 
 .fourth-section-projects {
-    overflow: hidden;
-    // background-color: rgba(0,0,0, 0.4);
     .fourth-section-projects-container {
-        // background-color: rgba(0,0,0, 0.2);
         padding-top: 30px;
         margin-bottom: 80px;
         position: relative;
@@ -20,10 +17,10 @@
             }
         }
         .fourth-section-projects-container-image-container {
-            // background-color: rgba(0,0,0, 0.3);
             min-width: 50%;
             max-width: 50%;
             z-index: 3;
+            overflow-x: hidden;
             img {
                 height: 100%;
                 width: 100%;
@@ -71,9 +68,11 @@
     }
 }
 
-@import 'src/assets/scss/heigth-responsive.scss';
-@import 'src/assets/scss/width-responsive-600.scss';
+@import "src/assets/scss/heigth-responsive.scss";
+@import "src/assets/scss/width-responsive-600.scss";
+@import "src/assets/scss/width-responsive-900.scss";
+@import "src/assets/scss/width-responsive-1500.scss";
 @import "src/assets/scss/width-responsive-smartphone-landscape.scss";
 @import "src/assets/scss/responsive-ipad-mini.scss";
 @import "src/assets/scss/responsive-ipad-air.scss";
-@import 'src/assets/scss/responsive.scss';
+@import "src/assets/scss/responsive.scss";
