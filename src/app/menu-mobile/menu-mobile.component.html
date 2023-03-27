@@ -1,4 +1,4 @@
-<div (click)="removeClassFromElementById('mobile-menu-container', 'd-none')"
+<div (click)="openSmartPhoneMenu('mobile-menu-container', 'd-none')"
     class="drop-menu display-flex column hide-not-mobile">
     <img src="assets/img/Vector 6.png">
     <img src="assets/img/Vector 6.png">
@@ -19,10 +19,10 @@
         </div>
 
         <div class="insidebox-choose-section-container center column">
-            <div (click)="disable(); scroll('about')" class="choose-side-section-link">About me</div>
-            <div (click)="disable(); scroll('skillset')" class="choose-side-section-link">Skill set</div>
-            <div (click)="disable(); scroll('mywork')" class="choose-side-section-link">My work</div>
-            <div (click)="disable(); scroll('contact')" class="choose-side-section-link">Contact</div>
+            <div (click)="closesmartphonemenu(); scroll('about')" class="choose-side-section-link">About me</div>
+            <div (click)="closesmartphonemenu(); scroll('skillset')" class="choose-side-section-link">Skill set</div>
+            <div (click)="closesmartphonemenu(); scroll('mywork')" class="choose-side-section-link">My work</div>
+            <div (click)="closesmartphonemenu(); scroll('contact')" class="choose-side-section-link">Contact</div>
         </div>
     </div>
 </div>
