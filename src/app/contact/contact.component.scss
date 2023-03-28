@@ -1,4 +1,4 @@
-@import 'src/assets/scss/mixins';
+@import "src/assets/scss/mixins";
 
 .fifth-section {
     width: 100%;
@@ -122,6 +122,8 @@
         width: 39px;
         &:hover {
             cursor: pointer;
+            background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #ff8059 6.25%, #ff8059 51.56%, #f08000 100%);
+            @include jump-animation;
         }
     }
 
@@ -141,7 +143,12 @@
     }
 
     .errorred {
-        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #ff5959 6.25%, #ff5959 51.56%, #f00000 100%) !important;
+        background: radial-gradient(
+            74.22% 74.22% at 19.79% 22.42%,
+            #ff5959 6.25%,
+            #ff5959 51.56%,
+            #f00000 100%
+        ) !important;
     }
 
     .buttonanimation {

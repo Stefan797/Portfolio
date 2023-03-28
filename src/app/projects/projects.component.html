@@ -13,7 +13,7 @@
         </div>
 
         <div class="fourth-section-projects-container-image-container">
-            <img [attr.data-aos]="getdata(i)" class="my-element" src="assets/img/{{ project['img'] }}"> 
+            <img (click)="visitProject(project['url'])" [attr.data-aos]="getdata(i)" class="my-element" src="assets/img/{{ project['img'] }}"> 
         </div>
 
         <!-- [attr.data-aos]="getdata(i)" data-aos="fade-right"  {{ i % 2 === 0 ? 'fade-right' : 'fade-left' }} [ngClass]="i % 2 === 0 ? 'fade-right' : 'fade-left'" -->
@@ -31,7 +31,7 @@
                 <span>{{project['description']}}</span>
             </div>
             <div class="fourth-section-projects-container-project-datas-tryout">
-                <button (click)="visitProject(project['url'])" class="primary-button">Try out</button>
+                <button (click)="visitProject(project['github'])" class="primary-button">Github</button>
                 <button (click)="visitProject(project['doc'])" class="primary-button"
                     [style]="{'margin': i % 2 == 0 ? '24px 0 0 12px' : '24px 0 0 12px'}">Doc</button>
             </div>
