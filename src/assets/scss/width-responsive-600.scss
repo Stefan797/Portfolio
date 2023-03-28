@@ -88,7 +88,7 @@
     .third-section {
         h2 {
             font-size: 72px !important;
-            margin-bottom: 2px;
+            margin-bottom: 16px;
         }
         .third-section-pictures {
             display: flex;
@@ -96,6 +96,7 @@
             justify-content: center;
             width: 95.48%;
             .third-section-pictures-box {
+                height: 70px !important;
                 margin-top: 32px;
                 text-align: center;
                 img {

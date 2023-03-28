@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) and (min-width: 601px) {
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
     /*abovethefold*/
     .hide-between-600-and-800 {
         display: none !important;
@@ -113,6 +113,7 @@
         }
     }
     .third-section-pictures-box {
+        height: 110px !important;
         img {
             margin-left: 54px !important;
             margin-right: 40px !important;

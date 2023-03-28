@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1500px) and (min-width: 901px) {
+@media only screen and (max-width: 1500px) and (min-width: 1001px) {
     /*abovethefold*/
     .first-section-name {
         .name {
@@ -30,6 +30,11 @@
                 }
             }
         }
+    }
+
+    /* Skills */
+    .third-section-pictures-box {
+        height: 130px !important;
     }
     
     /* mywork */
