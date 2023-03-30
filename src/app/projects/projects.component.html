@@ -1,7 +1,5 @@
 <div class="fourth-section-projects center" *ngFor="let project of allProjects; let i = index">
-
-
-
+    
     <div class="fourth-section-projects-container center"
         [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}">
 
@@ -42,8 +40,6 @@
             </div>
             <img (click)="visitProject(project['url'])" [attr.data-aos]="getdata(i)" class="my-element" src="assets/img/{{ project['img'] }}">
         </div>
-
-        <!-- [attr.data-aos]="getdata(i)" data-aos="fade-right"  {{ i % 2 === 0 ? 'fade-right' : 'fade-left' }} [ngClass]="i % 2 === 0 ? 'fade-right' : 'fade-left'" -->
 
         <div class="fourth-section-projects-container-project-datas column"
             [style]="{'align-items': i % 2 == 0 ? 'flex-start' : 'flex-end'}">
