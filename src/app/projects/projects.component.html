@@ -1,19 +1,46 @@
 <div class="fourth-section-projects center" *ngFor="let project of allProjects; let i = index">
-    
-    
 
-    <div class="fourth-section-projects-container center" [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}">
-        
+
+
+    <div class="fourth-section-projects-container center"
+        [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}">
+
         <div class="balls">
-            <img src="assets/img/ellipse_six.png" class="ball-six-smartphone" *ngIf="i==0" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'"> 
-            <img src="assets/img/ellipse_seven.png" class="hide-mobile" *ngIf="i==1" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
-            <img src="assets/img/ellipse_eight.png" class="ball-eight-smartphone" *ngIf="i==1" [style.right]="project['secondBallPosition']['right'] + '%'" [style.top]="project['secondBallPosition']['top'] + '%'">
-            <img src="assets/img/ellipse_nine.png" class="ball-nine-smartphone" *ngIf="i==2" [style.left]="project['ballPosition']['left'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
-            <img src="assets/img/ellipse_ten.png" class="ball-ten-smartphone" *ngIf="i==3" [style.right]="project['ballPosition']['right'] + '%'" [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_six.png" class="ball-six-smartphone" *ngIf="i==0"
+                [style.left]="project['ballPosition']['left'] + '%'"
+                [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_seven.png" class="hide-mobile" *ngIf="i==1"
+                [style.left]="project['ballPosition']['left'] + '%'"
+                [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_eight.png" class="ball-eight-smartphone" *ngIf="i==1"
+                [style.right]="project['secondBallPosition']['right'] + '%'"
+                [style.top]="project['secondBallPosition']['top'] + '%'">
+            <img src="assets/img/ellipse_nine.png" class="ball-nine-smartphone" *ngIf="i==2"
+                [style.left]="project['ballPosition']['left'] + '%'"
+                [style.bottom]="project['ballPosition']['bottom'] + '%'">
+            <img src="assets/img/ellipse_ten.png" class="ball-ten-smartphone" *ngIf="i==3"
+                [style.right]="project['ballPosition']['right'] + '%'"
+                [style.bottom]="project['ballPosition']['bottom'] + '%'">
         </div>
 
         <div class="fourth-section-projects-container-image-container">
-            <img (click)="visitProject(project['url'])" [attr.data-aos]="getdata(i)" class="my-element" src="assets/img/{{ project['img'] }}"> 
+            <div class="text-container">
+                <h1 class="animate-text">
+                    <span>L</span>
+                    <span>i</span>
+                    <span>v</span>
+                    <span>e</span>
+                    <span>-</span>
+                    <span>P</span>
+                    <span>r</span>
+                    <span>e</span>
+                    <span>v</span>
+                    <span>i</span>
+                    <span>e</span>
+                    <span>w</span>
+                </h1>
+            </div>
+            <img (click)="visitProject(project['url'])" [attr.data-aos]="getdata(i)" class="my-element" src="assets/img/{{ project['img'] }}">
         </div>
 
         <!-- [attr.data-aos]="getdata(i)" data-aos="fade-right"  {{ i % 2 === 0 ? 'fade-right' : 'fade-left' }} [ngClass]="i % 2 === 0 ? 'fade-right' : 'fade-left'" -->
