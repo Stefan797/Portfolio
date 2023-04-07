@@ -3,7 +3,7 @@ export const allProjects = [
         name: 'Movieflix',
         technologies: 'HTML | Angular | JS | TypeScript | Django | Python',
         description: 'This is a very cool video platform on programming.',
-        img: 'Movieflix.jpg',
+        img: 'Movieflix.png',
         url: 'https://movieflix.stefanhuebner97.de/home',
         github: 'https://github.com/Stefan797/Movieflix-Frontend',
         doc: 'https://stefanhuebner97.de/Pokedex/out',
